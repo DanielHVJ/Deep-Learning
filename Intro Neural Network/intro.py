@@ -9,7 +9,7 @@ class NeuralNetwork():
         # We model a single neuron, with 3 input connections and 1 output connection.
         # We assign random weights to a 3 x 1 matrix, with values in the range -1 to 1
         # and mean 0.
-        self.synaptic_weights = 2 * random.randint((3, 1)) - 1
+        self.synaptic_weights = 2 * random.randint((3, 1, 3)) - 1
 
     # The Sigmoid function, which describes an S shaped curve.
     # We pass the weighted sum of the inputs through this function to
@@ -49,7 +49,6 @@ class NeuralNetwork():
 
 
 if __name__ == "__main__":
-
     #Intialise a single neuron neural network.
     neural_network = NeuralNetwork()
 
